@@ -6,15 +6,19 @@
 	<title>Demo</title>
 
 <style>
+html {
+    font-size: 80.5%;
+}
 body{
 	margin: 0;
+    font-size: 1.2em;
 }
 a{
 text-decoration: none;
 }
 /* 标题 */
 .header {
-    padding: 80px;
+    padding: 100px;
     text-align: center;
     background: #001333;
     color: white;
@@ -41,7 +45,6 @@ text-decoration: none;
     color: #3090e9;;
     text-align: center;
     padding: 14px 20px;
-    text-decoration: none;
     font-size: 1.2em;
 }
 
@@ -50,76 +53,133 @@ text-decoration: none;
     color: red;
 }
 
-.codelist a.item-top {
-  width: 40%;
+.codelist h2 {
+  font-size: 18px;
+  margin: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+  text-align: center;
+  font-size: 28px;
 }
 
-.codelist a.item-top{
-width: 28%;
-margin: 0 8px 10px 0;
-height: 80px;
-background-color: #f6f6f6;
-padding: 6px 16px;
+/* 鼠标移动到的top的整体变色 */
+.codelist a:hover {
+  background-color: #f1f1f1;
 }
 
-.codelist a{
-width: 72px;
-margin: 0 5px 8px 5px;
-float: left;
-font-size: 12px;
-}
-
-.codelist a.item-top .codeicon {
+.codelist a {
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  text-decoration: none;
+  width: 29%;  
+  margin: 0 8px 10px 0;
+  text-align: left;
+  height: 90px;
+  background-color: #f6f6f6;
+  border-radius: 11px;
+  padding: 6px 16px;
 }
+
+.codelist h4 {
+  color: #64854c;
+  font-size: 16px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-align: left;
+  font-size: 14px;
+text-align: left;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
 
 .copy {
-  color: #999999;
-text-align: center;
-    padding: 20px;
+    color: #999999;
     text-align: center;
-    background: #ddd;
-  font: 16px/20px 'OfficeTypeSansC', Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    background: #002c55;
+    font-size: 12px;
+    margin-top: 20px;
+      box-shadow: 0 -1px 1px #ececec;
+      width: 100%;
+      float: left;
 }
 
 </style>
 </head>
 <body>
-	<div class="header">
-  		<h1>(NAME)</h1>
-  		<p>this is demo</p>
-	</div>
+<div class="header">
+	<h1>ArcBomi</h1>
+ 	<p>this is demo</p>
+</div>
 
-	<div class="navbar">
-		<a href="#">index</a>
- 		<a href="#">book</a>
- 		<a href="#">tool</a>
- 		<a href="#">exam</a>
-	</div>
+<div class="navbar">
+	<a href="#">index</a>
+ 	<a href="#">book</a>
+ 	<a href="#">tool</a>
+ 	<a href="#">exam</a>
+</div>
 
-      		<div class="codelist">
-         		<h2><i class="fa"></i>LEARNING</h2>
-   	
-      		<a class="item-top" href="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"><h4>learn math</h4>
-                		<img class="codeicon" src="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"<strong>HTML, (introduce)</strong></a>
-          		</div>
-      		<a class="item-top" href="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"><h4>learn math</h4>
-                		<img class="codeicon" src="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"<strong>HTML, (introduce)</strong></a>
-          		</div>
-      		<a class="item-top" href="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"><h4>learn math</h4>
-                		<img class="codeicon" src="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"<strong>HTML, (introduce)</strong></a>
-          		</div>
-      		<a class="item-top" href="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"><h4>learn math</h4>
-                		<img class="codeicon" src="https://fizmat.kz/wp-content/themes/supergeneral/images/favicon.ico"<strong>HTML, (introduce)</strong></a>
-          		</div>
+<div class="codelist">
+    <h2>LEARNING</h2>
 
-		
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
 
-  	<div class="copy">
-     			<strong>Copyright © 2025 arcbomi.???</strong>
-	</div>
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+    <a href="#">
+    <h4>learn math</h4>
+    <img src="https://endowmentfund.fizmat.kz/img/logo.png" height="36" width="36"<strong>HTML, (introduce)</strong></a>
+
+</div>
+
+<div class="copy">
+     <strong>Copyright © 2025 arcbomi.???</strong>
+</div>
 
 </body>
 </html>
