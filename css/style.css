@@ -2,7 +2,7 @@ html {
     font-size: 80.5%;
 }
 body{
-	margin: 0;
+    margin: 0;
     font-size: 1.2em;
 }
 a{
@@ -96,7 +96,8 @@ text-overflow: ellipsis;
     background: #002c55;
     font-size: 12px;
     margin-top: 20px;
-    box-shadow: 0 -1px 1px #ececec;
     width: 100%;
     float: left;
+    position: absolute;
+    bottom: 0;
 }
