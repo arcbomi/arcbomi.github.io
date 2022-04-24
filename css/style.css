@@ -101,3 +101,7 @@ text-overflow: ellipsis;
     position: absolute;
     bottom: 0;
 }
+.codelist {
+    display: flex;
+    justify-content: space-between;
+}
