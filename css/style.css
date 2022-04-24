@@ -102,7 +102,10 @@ text-overflow: ellipsis;
     bottom: 0;
 }
 .codelist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+}
+.block_row {
+    display: inline-flex;
+    border: 20px solid white;
+    margin: 0px 0px 10px 0px;
 }
