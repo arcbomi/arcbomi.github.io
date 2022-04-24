@@ -101,3 +101,6 @@ text-overflow: ellipsis;
     position: absolute;
     bottom: 0;
 }
+.codelist {
+    text-align: center;
+}
