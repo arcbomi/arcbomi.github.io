@@ -101,7 +101,3 @@ text-overflow: ellipsis;
     position: absolute;
     bottom: 0;
 }
-.codelist {
-    display: inline-flex;
-    text-align: center;
-}
