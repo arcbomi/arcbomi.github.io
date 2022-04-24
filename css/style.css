@@ -12,7 +12,10 @@ text-decoration: none;
 .header {
     padding: 100px;
     text-align: center;
-    background: #001333;
+    /*background: #001333;*/
+    background-image:url('https://almaty.fizmat.kz/wp-content/themes/almaty/images/bg-01.png');
+    background-repeat:repeat-x;
+    background-attachment:fixed;
     color: white;
 }
 
