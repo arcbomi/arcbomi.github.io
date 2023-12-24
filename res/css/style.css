@@ -1,0 +1,113 @@
+html {
+    font-size: 80.5%;
+}
+body{
+    margin: 0;
+    font-size: 1.2em;
+}
+a{
+text-decoration: none;
+}
+
+.header {
+    padding: 100px;
+    text-align: center;
+    /*background: #001333;*/
+    background-image:url('../png/fizmat-background.png');
+    background-repeat:repeat-x;
+    background-attachment:fixed;
+    color: white;
+}
+
+.header h1 {
+   font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #002c55;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #3090e9;;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.codelist h2 {
+  font-size: 18px;
+  margin: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+  text-align: center;
+  font-size: 28px;
+}
+
+.codelist a:hover {
+  background-color: #f1f1f1;
+}
+
+.codelist a {
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+  float: left;
+  width: 27.9%;  
+  margin: 0 8px 10px 0;
+  text-align: left;
+  height: 90px;
+  background-color: #f6f6f6;
+  border-radius: 11px;
+  padding: 6px 16px;
+}
+
+.codelist h4 {
+  color: #64854c;
+  font-size: 16px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-align: left;
+  font-size: 14px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+.codelist a img{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.codelist a strong{
+    display: block;
+    color: #666;
+    text-align: left;
+}
+.copy {
+    color: #999999;
+    text-align: center;
+    padding: 20px 0;
+    background: #002c55;
+    font-size: 12px;
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    bottom: 0;
+}
+.codelist {
+    text-align: center;
+}
+.block_row {
+    display: inline-flex;
+    border: 0px solid white;
+    margin: 0px 0px 0px 0px;
+}
