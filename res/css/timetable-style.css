@@ -1,0 +1,51 @@
+/* Reset default margin and padding */
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('../png/fizmat-background.png');
+  }
+  
+  /* Styles for Swiper container */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Styles for individual Swiper slides */
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Caption styles */
+  caption {
+    color: black;
+    font-size: 22px;
+  }
+  
+  /* Time-related styles */
+  .time{
+    text-align: right;
+  }
+
+
+  
+  /* Table styles */
+  table {
+    font-size: 12px;
+    color: #fff;
+    background-color: #002955;
+    border-radius: 11px;
+    padding: 6px 15px;
+    font-weight: bold;
+    font-family: Sans-serif;
+  }
+  
