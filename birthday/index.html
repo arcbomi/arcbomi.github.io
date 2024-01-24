@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Check</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/typeiii/jquery-csv/1.0.11/src/jquery.csv.js"></script>
+</head>
+<body>
+
+<script>
+$(document).ready(function() {
+  // 加载CSV文件
+  $.ajax({
+    type: "GET",
+    url: "all.csv", // 请替换成你的CSV文件路径
+    dataType: "text",
+    success: function(data) {
+      // 解析CSV文件
+      var csvData = $.csv.toArrays(data);
+
+      // 获取今天的日期
+      var today = new Date();
+      var todayFormatted = ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+
+      // 遍历CSV数据，查找今天生日的人
+      var birthdayPeople = [];
+      for (var i = 0; i < csvData.length; i++) {
+        var name = csvData[i][0];
+        var birthday = csvData[i][2];
+
+        if (birthday === todayFormatted) {
+          birthdayPeople.push(name);
+        }
+      }
+
+      // 输出结果
+      if (birthdayPeople.length > 0) {
+        console.log("今天生日的人: " + birthdayPeople.join(", "));
+      } else {
+        console.log("今天没有人过生日。");
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
