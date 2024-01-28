@@ -7,7 +7,7 @@ html, body {
   }
   
   body {
-    background-image: url('../png/fizmat-background.png');
+    background-image: url('../res/png/fizmat-background.png');
   }
   
   /* Styles for Swiper container */

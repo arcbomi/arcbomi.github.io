@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Birthday Check</title>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.rawgit.com/typeiii/jquery-csv/1.0.11/src/jquery.csv.js"></script>
+  <script src="res/jquery-3.6.4.min.js"></script>
+  <script src="res/jquery.csv.js"></script>
 </head>
 <body>
-
 <script>
 $(document).ready(function() {
   $.ajax({
@@ -30,7 +29,7 @@ $(document).ready(function() {
       }
       var htmlString = '<h1>Бүгін туған күні болған адам</h1><ul>';
       for (var person in birthdayPeople) {
-        htmlString += '<li>' + person + '：' + birthdayPeople[person] + '</li>';
+        htmlString += '<li>' + person + ': ' + birthdayPeople[person] + '</li>';
       }
       if ($.isEmptyObject(birthdayPeople)) {
         htmlString += '<li>Бүгін ешкімнің туған күні жоқ</li>';
