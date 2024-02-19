@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZVLV4FXG6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZVLV4FXG6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3ZVLV4FXG6');
-</script>
+    gtag('config', 'G-3ZVLV4FXG6');
+  </script>
 
 
   <meta charset="UTF-8">
@@ -19,40 +18,57 @@
   <title>Birthday Check</title>
   <script src="res/jquery-3.6.4.min.js"></script>
   <script src="res/jquery.csv.js"></script>
-</head>
-<body>
-<script>
-$(document).ready(function() {
-  $.ajax({
-    type: "GET",
-    url: "all.csv",
-    dataType: "text",
-    success: function(data) {
-      var csvData = $.csv.toArrays(data);
-      var today = new Date();
-      var todayFormatted = ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
-      var birthdayPeople = {};
-      for (var i = 0; i < csvData.length; i++) {
-        var name = csvData[i][0];
-        var grade = csvData[i][1];
-        var birthday = csvData[i][2];
-        if (birthday === todayFormatted) {
-          birthdayPeople[name] = grade;
-        }
-      }
-      var htmlString = '<h1>Бүгін туған күні болған адам</h1><ul>';
-      for (var person in birthdayPeople) {
-        htmlString += '<li>' + person + ': ' + birthdayPeople[person] + '</li>';
-      }
-      if ($.isEmptyObject(birthdayPeople)) {
-        htmlString += '<li>Бүгін ешкімнің туған күні жоқ</li>';
-      }
-      htmlString += '</ul>';
-      $('body').append(htmlString);
+  <style>
+    body {
+        font-size: 24px;
+        margin-left: 37%;
+        width: 50%;
+        line-height: 1.5;
     }
-  });
-});
-</script>
 
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+  
+
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        type: "GET",
+        url: "all.csv",
+        dataType: "text",
+        success: function (data) {
+          var csvData = $.csv.toArrays(data);
+          var today = new Date();
+          var todayFormatted = ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+          var birthdayPeople = {};
+          for (var i = 0; i < csvData.length; i++) {
+            var name = csvData[i][0];
+            var grade = csvData[i][1];
+            var birthday = csvData[i][2];
+            if (birthday === todayFormatted) {
+              birthdayPeople[name] = grade;
+            }
+          }
+          var htmlString = '<table class="birthday-list"> <caption><h1>Бүгін туған күні болған адам</h1></caption>';
+          for (var person in birthdayPeople) {
+            htmlString += '<tr><td>' + person + '<td><td>' + birthdayPeople[person] + '</td>';
+          }
+          if ($.isEmptyObject(birthdayPeople)) {
+            htmlString += '<li>Бүгін ешкімнің туған күні жоқ</li>';
+          }
+          htmlString += '</table>';
+          $('body').append(htmlString);
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
