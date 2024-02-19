@@ -1,31 +1,31 @@
 html {
     font-size: 80.5%;
 }
-body{
+body {
     margin: 0;
     font-size: 1.2em;
 }
-a{
-text-decoration: none;
+a {
+    text-decoration: none;
 }
 
 .header {
-    padding: 100px;
+    padding: 75px;
     text-align: center;
     /*background: #001333;*/
-    background-image:url('../png/fizmat-background.png');
-    background-repeat:repeat-x;
-    background-attachment:fixed;
+    background-image: url('../png/fizmat-background.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
     color: white;
 }
 
 .header h1 {
-   font-size: 50px;
+    font-size: 70px;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #002c55;
+    overflow: hidden;
+    background-color: #002c55;
 }
 
 .navbar a {
@@ -41,19 +41,36 @@ text-decoration: none;
     color: red;
 }
 
-
 .copy {
-  color: #999999;
-  text-align: center;
-  padding: 20px 0;
-  background: #002c55;
-  font-size: 12px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+    color: #999999;
+    text-align: center;
+    padding: 20px 0;
+    background: #002c55;
+    font-size: 12px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 1.5;
+}
+.copy a
+{
+    color:rgb(255, 12, 12);
 }
 
-.codelist {
-    text-align: center;
+.centered {
+    margin-top: 37px;
+    color: #000; 
+    padding-left: 80px; 
+    padding-right: 80px; 
+    line-height: 1.5;
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
 }
+
+.centered strong {
+    font-weight: bold; 
+    color: #333; 
+}
+
+
