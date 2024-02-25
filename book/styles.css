@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.1em;
 }
 
 body {
@@ -17,23 +18,36 @@ body {
 header {
     background-image: url('../res/png/fizmat-background.png');
     color: #fff;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
+}
+
+header h1{
+    font-size: 50px;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #002c55;
+    padding: 10px 0; 
 }
 
 .navbar button {
     float: left;
     display: block;
-    color: #000000;;
+    color: #3090e9; 
     text-align: center;
-    padding: 5px 5px;
-    margin:10px;
+    padding: 8px 12px; 
+    margin: 0 10px; 
+    border: none;
+    background-color: #002c55; 
 }
+
+
+.navbar button:hover {
+    color: red; 
+}
+
 
 h1 {
     margin: 0;
@@ -74,7 +88,7 @@ input[type="text"] {
 }
 
 footer {
-    background-color: #444;
+    background-color: #002c55;
     color: #fff;
     padding: 20px;
     display: flex;

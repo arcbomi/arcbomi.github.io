@@ -105,7 +105,7 @@ h3{
 }
 .campus-color{
     flex-basis: 31%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: center;
 }
 .campus-color img{
@@ -154,7 +154,7 @@ h3{
 }
 .aboutcol{
     flex-basis: 48%;
-    padding: 30px 2px;
+    padding: 10px 2px;
 }
 .aboutcol img{
     width: 100%;
@@ -179,7 +179,7 @@ h3{
 .tulekter{
     width: 80%;
     margin: auto;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .tulek1{
     flex-basis: 65%;
@@ -199,22 +199,6 @@ h3{
     font-family: 'Afacad';
     font-size: 17px;
 }
-.Tphoto{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.Tcolor{
-    flex-basis: 49%;
-    margin-bottom: 5%;
-    text-align: center;
-}
-.Tcolor img{
-    width: 100%;
-    border-radius: 10px;
-}
-
 /*--page7--*/
 .location{
     width: 80%;
