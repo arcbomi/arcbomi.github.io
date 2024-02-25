@@ -1,0 +1,75 @@
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.birthday-list{
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;/*magik?*/
+    
+}
+
+.birthday-list tr
+{
+    line-height: 1.7;
+}
+
+.birthday-list tr:hover {
+    color: red;
+}
+table{
+    font-size: 20px;
+    color: #fff;
+    background-color: #002955;
+    border-radius: 34px;
+    padding: 6px 15px;
+    font-weight: bold;
+    font-family: Sans-serif;
+    margin: 40px;
+}
+
+caption {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: -25px; 
+    margin-top: -20px;
+    margin-bottom: 15px;  
+  }
+
+  .copy {
+    color: #999999;
+    text-align: center;
+    padding: 20px 0;
+    background: #002c55;
+    font-size: 12px;
+    width: 100%;
+    bottom: 0;
+    line-height: 1.2;
+    bottom: 0;
+    position: absolute;
+}
+
+@media (min-width: 500px) {
+    caption {
+        color: black;
+        font-weight: bolder;
+        font-size: 30px;
+      }
+    table{
+        font-size: 30px;
+        padding: 12px 30px;
+        line-height: 1.5;
+    }
+    .copy {
+        font-size: 15px;
+        line-height: 1.5; 
+    }
+    
+}

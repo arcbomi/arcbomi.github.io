@@ -1,6 +1,7 @@
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 80.5%;
+    position: relative;
 }
 body {
     margin: 0;
@@ -103,7 +104,15 @@ a {
     width: 100%;
     bottom: 0;
     line-height: 1.2;
+    bottom: 0;
 }
+
+@media (min-width: 800px) {
+    .copy {
+        position: absolute;
+    }
+}
+
 
 .copy a {
     color: rgb(255, 12, 12);

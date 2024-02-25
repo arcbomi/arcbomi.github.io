@@ -1,3 +1,40 @@
+
+const buttons = document.querySelectorAll('.gradeButton');
+
+
+function removeSuffix() {
+    buttons.forEach(button => {
+        button.textContent = button.textContent.replace('-сынып', '');
+    });
+}
+
+
+function addSuffix() {
+    buttons.forEach(button => {
+        if (!button.textContent.includes('-сынып')) {
+            button.textContent += '-сынып';
+        }
+    });
+}
+
+function contSuffix()
+{
+    if (window.innerWidth < 560) {
+        removeSuffix();
+    } else {
+        addSuffix();
+    }
+}
+
+window.addEventListener('resize', () => {
+    contSuffix()
+});
+
+contSuffix()
+
+
+
+
 window.onload = function() {
     const bookList = document.getElementById("bookList");
     const searchInput = document.getElementById("searchInput");
@@ -13,7 +50,8 @@ window.onload = function() {
                 .then(data => {
                     const lines = data.split('\n');
                     lines.forEach(line => {
-                        const [number, title] = line.split(' ');
+                        const [number, ...titleParts] = line.split(' ');
+                        const title = titleParts.join(' ');
                         const bookImgUrl = `https://okulyk.kz/wp-content/books/${number}/${number}.jpg`;
                         const bookPdfUrl = `https://s3.timeweb.com/29ae0e9e-okulyk-books/${number}/${number}.pdf`;
                         const bookItem = document.createElement("div");
@@ -23,7 +61,11 @@ window.onload = function() {
                             bookImg.src = bookImgUrl;
                             bookImg.alt = title;
                             bookImg.addEventListener("click", () => {
-                                window.open(bookPdfUrl);
+                                //const confirmation = confirm("Ашуға растайсыз ба");
+                                //if (confirmation) 
+                                {
+                                    window.open(bookPdfUrl);
+                                }
                             });
                             bookItem.appendChild(bookImg);
                             bookList.appendChild(bookItem);
@@ -33,10 +75,10 @@ window.onload = function() {
         });
     }
 
-    // 监听搜索输入框变化
+
     searchInput.addEventListener("input", loadBooks);
 
-    // 监听年级按钮点击事件
+
     gradeButtons.forEach(button => {
         button.addEventListener("click", function() {
             const grade = this.getAttribute("data-grade");
@@ -74,3 +116,4 @@ window.onload = function() {
     // 初始化加载所有书籍列表
     loadBooks();
 };
+

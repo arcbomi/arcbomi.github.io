@@ -43,11 +43,17 @@ header h1{
     background-color: #002c55; 
 }
 
-
 .navbar button:hover {
     color: red; 
 }
 
+@media (max-width: 560px) {
+    .navbar button {
+        background-color: #fff; 
+        border-radius: 8px;
+        padding: 8px 15px
+    }
+}
 
 h1 {
     margin: 0;
@@ -93,11 +99,33 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+@media (max-width: 560px) {
+    footer {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    footer h2{
+        margin-right: -6px;
+      }
+    
 }
 
 footer div {
     flex: 1;
     margin-right: 20px;
+}
+
+footer h2{
+    color:#ca141b;
+    font-weight:bolder;
+}
+
+footer a{
+  font-size: 22px;
 }
 
 h2 {

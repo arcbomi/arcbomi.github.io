@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-3ZVLV4FXG6');
   </script>
 
@@ -16,26 +15,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Birthday Check</title>
+  <link rel="shortcut icon" href="res/png/favicon.ico">
   <script src="res/jquery-3.6.4.min.js"></script>
   <script src="res/jquery.csv.js"></script>
-  <style>
-    body {
-        font-size: 24px;
-        margin-left: 37%;
-        width: 50%;
-        line-height: 1.5;
-    }
-
-    h1 {
-        margin-top: 50px;
-        text-align: center;
-    }
-</style>
+  <link rel="stylesheet" type="text/css" href="res/style.css">
 </head>
 
 <body>
   
-
+  <div class="copy">
+    <strong>arcbomi.github.io</strong></br>
+    Cайты
+    <strong>
+        <a href="https://github.com/arcbomi">arcbomi,</a>
+        <a href="https://github.com/Nugili">Nugili,</a>
+        <a href="https://github.com/nazar2023">nazar2023</a> </strong>
+     жасалған
+</div>
 
   <script>
     $(document).ready(function () {
@@ -56,15 +52,15 @@
               birthdayPeople[name] = grade;
             }
           }
-          var htmlString = '<table class="birthday-list"> <caption><h1>Бүгін туған күні болған адам</h1></caption>';
+          var htmlString = '<div class="birthday-list"><table> <caption><h1>Бүгін туған күні болған адам</h1></caption>';
           for (var person in birthdayPeople) {
-            htmlString += '<tr><td>' + person + '<td><td>' + birthdayPeople[person] + '</td>';
+            htmlString += '<tr><td>' + person + '</td><td>' + birthdayPeople[person] + '</td>';
           }
           if ($.isEmptyObject(birthdayPeople)) {
             htmlString += '<li>Бүгін ешкімнің туған күні жоқ</li>';
           }
-          htmlString += '</table>';
-          $('body').append(htmlString);
+          htmlString += '</table></div>';
+          $('body').prepend(htmlString);
         }
       });
     });
