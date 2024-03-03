@@ -80,7 +80,7 @@ html, body {
 
 .menu-item {
   font-weight: bolder;
-  color:rgba(255, 0, 0, 0.912);
+  color:rgba(250, 0, 0, 0.912);
   cursor: pointer;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
