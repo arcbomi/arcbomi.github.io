@@ -7,7 +7,8 @@ html, body {
   }
   
   body {
-    background-image: url('../../res/png/fizmat-background.png');
+    background-image: url('../../../git/arcbomi.github.io/res/png/fizmat-background.png');
+    
   }
   
 
@@ -23,20 +24,20 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
 
   caption {
     color: black;
     font-size: 22px;
+    
   }
  
   .time{
     text-align: right;
+    
   }
-
-
-  
 
   table {
     font-size: 12px;
@@ -46,7 +47,63 @@ html, body {
     padding: 6px 15px;
     font-weight: bold;
     font-family: Sans-serif;
+    
   }
+
+.grades {
+    position: absolute;
+    bottom: 10px;
+}
+
+.grades ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.grades li {
+    z-index: 999;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.submenu-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submenu-item:hover {
+  background-color: #ddd;
+}
+
+
 
 
  

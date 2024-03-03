@@ -19,12 +19,16 @@
 
   <link rel="stylesheet" href="res/swiper-bundle.min.css">
   <link rel="stylesheet" href="res/timetable-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js" integrity="sha512-2ypsPur7qcA+2JjmmIJR1c4GWFqTLIe1naXXplraMg0aWyTOyAMpOk+QL+ULpzwrO/GdwA3qB3FhVyyiR8gdhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="res/swiper-bundle.min.js"></script>
   <script src="res/timetable-script.js"></script>
 
 </head>
 
 <body>
+
+
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -72,193 +76,65 @@
           </tr>
         </table>
       </div>
-      <div class="swiper-slide">
-        <table class="timetb">
-          <caption>ДҮЙСЕНБІ</caption>
-          <tr>
-            <td>ағылшын тілі<br> 204/321</td>
-            <td class="time">8.00<br> 8.45</td>
-          </tr>
-          <tr>
-            <td>ағылшын тілі<br> 204/321</td>
-            <td class="time">8.50<br> 9.35</td>
-          </tr>
-          <tr>
-            <td>алгебра<br> 235/237</td>
-            <td class="time">9.50<br> 10.35</td>
-          </tr>
-          <tr>
-            <td>алгебра<br> 235/237</td>
-            <td class="time">10.40<br> 11.25</td>
-          </tr>
-          <tr>
-            <td>физика<br> 403/310</td>
-            <td class="time">11.45<br> 12.30</td>
-          </tr>
-          <tr>
-            <td>физика<br> 403/310</td>
-            <td class="time">12.35<br> 13.20</td>
-          </tr>
-          <tr>
-            <td>информатика<br> А204/А207</td>
-            <td class="time">13.40<br> 14.25</td>
-          </tr>
-        </table>
-      </div>
-      <div class="swiper-slide">
-        <table class="timetb">
-          <caption>СЕЙСЕНБІ</caption>
-          <tr>
-            <td>дене шынық.<br> спорт зал</td>
-            <td class="time">8.00<br> 8.45</td>
-          </tr>
-          <tr>
-            <td>дене шынық.<br> спорт зал</td>
-            <td class="time">8.50<br> 9.35</td>
-          </tr>
-          <tr>
-            <td>Қаз. тарихы<br> 111</td>
-            <td class="time">9.50<br> 10.35</td>
-          </tr>
-          <tr>
-            <td>Қаз. тарихы<br> 111</td>
-            <td class="time">10.40<br> 11.25</td>
-          </tr>
-          <tr>
-            <td>геометрия<br> 235/237</td>
-            <td class="time">11.45<br> 12.30</td>
-          </tr>
-          <tr>
-            <td>геометрия<br> 235/237</td>
-            <td class="time">12.35<br> 13.20</td>
-          </tr>
-          <tr>
-            <td>орыс тілі<br> 202/112</td>
-            <td class="time">13.40<br> 14.25</td>
-          </tr>
-          <tr>
-            <td>ЕШП физика<br> 403/310</td>
-            <td class="time">14.30<br> 15.15</td>
-          </tr>
-          <tr>
-            <td>Қазақ әдебиеті<br> спорт зал</td>
-            <td class="time">15.40<br> 16.25</td>
-          </tr>
-        </table>
-      </div>
-      <div class="swiper-slide">
-        <table class="timetb">
-          <caption>СӘРСЕНБІ</caption>
-          <tr>
-            <td>алгебра<br> 235/237</td>
-            <td class="time">8.00<br> 8.45</td>
-          </tr>
-          <tr>
-            <td>алгебра<br> 235/237</td>
-            <td class="time">8.50<br> 9.35</td>
-          </tr>
-          <tr>
-            <td>ағылшын тілі<br> 204/321</td>
-            <td class="time">9.50<br> 10.35</td>
-          </tr>
-          <tr>
-            <td>ағылшын тілі<br> 204/321</td>
-            <td class="time">10.40<br> 11.25</td>
-          </tr>
-          <tr>
-            <td>сынып сағаты<br> 101</td>
-            <td class="time">11.45<br> 12.30</td>
-          </tr>
-          <tr>
-            <td>биология<br> 101</td>
-            <td class="time">12.35<br> 13.20</td>
-          </tr>
-          <tr>
-            <td>орыс тілі<br> 202/112</td>
-            <td class="time">13.40<br> 14.25</td>
-          </tr>
-          <tr>
-            <td>орыс тілі<br> 202/112</td>
-            <td class="time">14.30<br> 15.15</td>
-          </tr>
-        </table>
-      </div>
-      <div class="swiper-slide">
-        <table class="timetb">
-          <caption>БЕЙСЕНБІ</caption>
-          <tr>
-            <td>химия<br> 121</td>
-            <td class="time">8.00<br> 8.45</td>
-          </tr>
-          <tr>
-            <td>химия<br> 121</td>
-            <td class="time">8.50<br> 9.35</td>
-          </tr>
-          <tr>
-            <td>геометрия<br> 235/237</td>
-            <td class="time">9.50<br> 10.35</td>
-          </tr>
-          <tr>
-            <td>геометрия<br> 235/237</td>
-            <td class="time">10.40<br> 11.25</td>
-          </tr>
-          <tr>
-            <td>информатика<br> А204/А207</td>
-            <td class="time">11.45<br> 12.30</td>
-          </tr>
-          <tr>
-            <td>информатика<br> А204/А207</td>
-            <td class="time">12.35<br> 13.20</td>
-          </tr>
-          <tr>
-            <td>қазақ әдебиті<br> 103</td>
-            <td class="time">13.40<br> 14.25</td>
-          </tr>
-          <tr>
-            <td>қазақ әдебиті<br> 103</td>
-            <td class="time">14.30<br> 15.15</td>
-          </tr>
-        </table>
-      </div>
-      <div class="swiper-slide">
-        <table class="timetb">
-          <caption>ЖҰМА</caption>
-          <tr>
-            <td>қазақ тілі<br> 103</td>
-            <td class="time">8.00<br> 8.45</td>
-          </tr>
-          <tr>
-            <td>ЕШП алгебра<br> 235/237</td>
-            <td class="time">8.50<br> 9.35</td>
-          </tr>
-          <tr>
-            <td>дүн. тарих<br> 111</td>
-            <td class="time">9.50<br> 10.35</td>
-          </tr>
-          <tr>
-            <td>құқық негіздері<br> 111</td>
-            <td class="time">10.40<br> 11.25</td>
-          </tr>
-          <tr>
-            <td>физика<br> 403/310</td>
-            <td class="time">11.45<br> 12.30</td>
-          </tr>
-          <tr>
-            <td>физика<br> 403/310</td>
-            <td class="time">12.35<br> 13.20</td>
-          </tr>
-          <tr>
-            <td>география<br> 123</td>
-            <td class="time">13.40<br> 14.25</td>
-          </tr>
-        </table>
-      </div>
     </div>
   </div>
 
+  <div class="grades">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class="hamburger-menu">
+    <div class="menu-item" onclick="toggleSubMenu('sub-menu')">Menu</div>
+    <div class="submenu" id="sub-menu">
+        <div class="submenu-item" onclick="readFiles(7)">7-сынып</div>
+        <div class="submenu-item" onclick="readFiles(8)">8-сынып</div>
+        <div class="submenu-item" onclick="readFiles(9)">9-сынып</div>
+        <div class="submenu-item" onclick="readFiles(10)">10-сынып</div>
+    </div>
+
+    <!-- Add more menu items and submenus for other grades -->
+</div>
+
+
+  
+
   <!-- Initialize Swiper -->
   <script>
+
+    // 函数 toggleSubMenu() 用于展开或收起子菜单
+    function toggleSubMenu(submenuId) {
+        var submenu = document.getElementById(submenuId);
+        if (submenu.style.display === "none" || submenu.style.display === "") {
+            submenu.style.display = "flex";
+        } else {
+            submenu.style.display = "none";
+        }
+    }
+
     var swiper = new Swiper(".mySwiper", {});
+
+    // 创建一个 MutationObserver 实例
+var observer = new MutationObserver(function(mutationsList, observer) {
+    // 循环遍历每个 mutation
+    mutationsList.forEach(function(mutation) {
+        // 检查是否有子节点变化，并且是否包含 body 元素
+        if (mutation.type === 'childList' && Array.from(mutation.addedNodes).some(node => node.nodeName === 'BODY')) {
+            // 调用 Swiper 实例的更新方法
+            swiper.update(); // 更新 Swiper 实例
+            swiper.updateSize(); // 更新 Swiper 的尺寸
+            swiper.updateSlides(); // 更新 Swiper 的幻灯片
+        }
+    });
+});
+
+// 配置 MutationObserver 监听 body 元素的子节点变化
+var observerConfig = { childList: true, subtree: true };
+
+// 启动 MutationObserver
+observer.observe(document.body, observerConfig);
+
   </script>
 </body>
 
