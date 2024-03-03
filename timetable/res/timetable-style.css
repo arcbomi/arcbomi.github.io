@@ -1,5 +1,6 @@
 
 html, body {
+    font-family: Sans-serif;
     position: relative;
     height: 100%;
     margin: 0;
@@ -71,20 +72,23 @@ html, body {
   position: fixed;
   top: 20px;
   left: 20px;
-  background-color: #f2f2f2;
+  background-color: #002955;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 9px;
   z-index: 1000;
 }
 
 .menu-item {
+  font-weight: bolder;
+  color:rgba(255, 0, 0, 0.912);
   cursor: pointer;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .menu-item:hover {
-  background-color: #ddd;
+  background-color: #002c55e7;
 }
 
 .submenu {
@@ -94,13 +98,15 @@ html, body {
 }
 
 .submenu-item {
+  color:#fff;
+  margin-left:-15px;
   cursor: pointer;
   padding: 5px 10px;
   transition: background-color 0.3s ease;
 }
 
 .submenu-item:hover {
-  background-color: #ddd;
+  background-color: #002355f0;
 }
 
 
