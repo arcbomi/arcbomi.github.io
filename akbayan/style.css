@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("banner20.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 1%;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #edf7f6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 58px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 19px;
+    color: #edf7f6;
+}
+
+/*/---------kasip---------*/
+.kasip{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.each{
+    flex-basis: 31%;
+    background: #ffc7a1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: Monaco;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.each:hover{
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.2)
+}
+
+/*campus*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.campus-color{
+    flex-basis: 31%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+.campus-color img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+/*-------Footer--------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    float: inline-end;
+    display: block;
+    padding: 30px 0;
+}
+.footer h3{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons{
+    float:center;
+}
+.icons img{
+    height: 35px;
+}
+
+/*--page2--*/
+.sub-main{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("banner4.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+.sub-main h1{
+    margin-top: 50px;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutcol{
+    flex-basis: 48%;
+    padding: 10px 2px;
+}
+.aboutcol img{
+    width: 100%;
+    height: 500px;
+}
+.aboutcol h1{
+    padding-left: 0;
+
+}
+.aboutcol p{
+    padding: 15px 0 25px;
+    font-family: 'Afacad';
+    font-size: 17px;
+}
+.abcd{
+    font-size: 17px;
+}
+
+
+/*--page3--*/
+.tulekter{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.tulek1{
+    flex-basis: 65%;
+}
+.tulek1 img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url('tulek.jpg');
+    background-size: cover;
+}
+.tulek1 h2{
+    color:#000000;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.tulek1 p{
+    font-family: 'Afacad';
+    font-size: 17px;
+}
+/*--page7--*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact1{
+    width: 80%;
+    margin: auto;
+}
+.contact2{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+
+
+.conteiner{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cola{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-top: 80px;
+    transition: transform 0.5s;
+}
+.cola img{
+    width: 100%;
+}
+.cola h4{
+    color: #000000;
+    padding-top: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.cola p{
+    font-size: 18px;
+    padding-top: 3px;
+    text-align: center;
+}
+.cola:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
