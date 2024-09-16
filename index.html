@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            .button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* Cool Animation */
+        .btn-animated {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-animated:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Font */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-900 text-center text-gray-300">
+
+    <h1 class="text-4xl font-bold mb-8 text-blue-400 fade-in">Hi, I am Arcbomi, nice to meet you!</h1>
+
+    <div class="flex flex-col gap-4 items-center">
+        <!--<a href="/donate" class="btn btn-outline btn-animated bg-orange-500 text-white hover:bg-orange-400 w-48 py-3 rounded-lg">Want to donate?</a>-->
+        <!--<a href="/resume" class="btn btn-outline btn-animated bg-blue-500 text-white hover:bg-blue-400 w-48 py-3 rounded-lg">Want to see my CV?</a>-->
+        <a href="/fizmat" class="btn btn-outline btn-animated bg-purple-600 text-white hover:bg-purple-500 w-48 py-3 rounded-lg">Are you a Fizmat student?</a>
+        <!-- <a href="/skills" class="btn btn-outline btn-animated bg-green-500 text-white hover:bg-green-400 w-48 py-3 rounded-lg">Want to learn new skills?</a> -->
+    </div>
+
+</body>
+</html>
